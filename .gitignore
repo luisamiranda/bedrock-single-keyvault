@@ -1,11 +1,6 @@
-.terraform
 deployments
-terraform.tfstate
-terraform.tfstate.backup
 translations
 istio-1.0.4
-terraform.tfvars
-.terraform.tfstate.lock.info
 *.out
 output
 *.log
@@ -15,3 +10,12 @@ vendor
 flux
 kubediff
 gitops_repo_key
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
